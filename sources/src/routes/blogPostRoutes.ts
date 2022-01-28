@@ -7,7 +7,7 @@ import { blogPostController } from '../controllers';
 export default (router: Router) => {
   router.post('/posts', blogPostController.createBlogPost);
   router.get('/posts', blogPostController.getBlogPosts);
-  router.get('/posts/:BlogPostId', blogPostController.getBlogPost);
-  router.patch('/posts/:BlogPostId', blogPostController.updateBlogPost);
-  router.delete('/BlogPosts/:uderId', blogPostController.deleteBlogPost);
+  router.get('/posts/:blogPostId', blogPostController.getBlogPost);
+  router.patch('/posts/:blogPostId', blogPostController.updateBlogPost);
+  router.delete('/posts/:blogPostId', blogPostController.deleteBlogPost);
 };
